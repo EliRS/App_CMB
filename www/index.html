@@ -19,34 +19,76 @@
 </head>
 <body >
   <div class="jumbotron text-center">
-    <h1>Calculo do Metabolismo Basal</h1>
+    <h3>Calculo do Metabolismo Basal</h3>
   </div>
   <div class="container" >
     <div class="row">
-      <div class="col-xs-12">
-          <label id="txtSexo"> Sexo:</label>
+      <div class="col-xs-2">
+          <label id="txtSexo" > Sexo:</label>
+      </div>
+      <div class="col-xs-10">
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12">
         <!-- Radio button  Sexo-->
-        <div class="forms" style="font-size:20px;">
-          <label for="rdo1">
-            <input type="radio" id="rdo1" value="M" name="radio">
-            <span class="rdo"></span>
-            <span>Masculino </span>
-          </label>
-          <label for="rdo2">
-            <input type="radio" id="rdo2" value="F" name="radio" checked>
-            <span class="rdo"></span>
-            <span>Feminino</span>
-          </label>
+        <label class="radio-inline">
+          <input type="radio" name="sexo" value="M" checked>Masculino
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="sexo" value="F">Feminino
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group row" style="font-size:20px;">
+          <div class="col-xs-4">
+            <label for="ex1">Idade:</label>
+            <input class="form-control" id="numeric" maxlength="3">
+          </div>
+          <div class="col-xs-4">
+            <label for="ex2">Peso:</label>
+            <input class="form-control somente-numero" id="sonumero" type="text">
+          </div>
+          <div class="col-xs-4">
+            <label for="ex3">Altura:</label>
+            <input class="form-control" id="ex3" type="text">
+          </div>
         </div>
       </div>
     </div>
     <div class="row taxa">
       <div class="col-xs-12">
         <label id="txtSexo">Taxa de Atividade</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="radio">
+          <label><input type="radio" name="taxa" checked>Pouco ou nenhum exercicio</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="taxa">Exercício leve 1 a 3 dias por semana</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="taxa">Exercício moderado, faz esportes 3 a 5 dias por semana</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="taxa">Exercício pesado de 5 a 6 dias por semana</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="taxa">Exercício pesado diariamente e até 2 vezes por dia</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+          <button class="btn btn-success btn-block" id="igual" >Calcular</button>
+        </div>
+        <div class="col-xs-4">
+        </div>
       </div>
     </div>
   </div>
