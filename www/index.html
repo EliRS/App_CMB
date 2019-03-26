@@ -17,24 +17,36 @@
   
   </script>  
 </head>
-<body>
+<body >
   <div class="jumbotron text-center">
     <h1>Calculo do Metabolismo Basal</h1>
   </div>
-  <div class="container">
+  <div class="container" >
     <div class="row">
       <div class="col-xs-12">
           <label id="txtSexo"> Sexo:</label>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 op">
-        <label class="radio-inline">
-          <input type="radio" name="optradio" checked> Masculino
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio">Feminino
-        </label>
+      <div class="col-xs-12">
+        <!-- Radio button  Sexo-->
+        <div class="forms" style="font-size:20px;">
+          <label for="rdo1">
+            <input type="radio" id="rdo1" value="M" name="radio">
+            <span class="rdo"></span>
+            <span>Masculino </span>
+          </label>
+          <label for="rdo2">
+            <input type="radio" id="rdo2" value="F" name="radio" checked>
+            <span class="rdo"></span>
+            <span>Feminino</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row taxa">
+      <div class="col-xs-12">
+        <label id="txtSexo">Taxa de Atividade</label>
       </div>
     </div>
   </div>
